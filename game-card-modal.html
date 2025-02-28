@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>MIND AGENTS</title>
+  </head>
+  <body>
+    <div class="visually-hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <defs>
+          <clipPath id="round-button"><path d="M0 0h80v85H0z" /></clipPath>
+        </defs>
+        <symbol
+          id="captain-indicator"
+          viewBox="0 0 19.0487 13.3658"
+          fill="none"
+        >
+          <path
+            d="M13.31 6.68L18.04 2.89L16.15 12.36L2.89 12.36L1 2.89L5.73 6.68L9.52 1L13.31 6.68Z"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="default-user-avatar" viewBox="0 0 34 34">
+          <path
+            id="Vector"
+            d="M1.77 17C1.77 8.58 8.58 1.77 17 1.77C25.41 1.77 32.22 8.58 32.22 17C32.22 25.41 25.41 32.22 17 32.22C8.58 32.22 1.77 25.41 1.77 17ZM17 3.89C13.52 3.89 10.19 5.27 7.73 7.73C5.27 10.19 3.89 13.52 3.89 17C3.89 20.47 5.27 23.8 7.73 26.26C10.19 28.72 13.52 30.1 17 30.1C20.47 30.1 23.8 28.72 26.26 26.26C28.72 23.8 30.1 20.47 30.1 17C30.1 13.52 28.72 10.19 26.26 7.73C23.8 5.27 20.47 3.89 17 3.89Z"
+            fill="#FFFFFF"
+            fill-opacity="1.000000"
+            fill-rule="nonzero"
+          />
+          <g opacity="0.500000">
+            <path
+              id="Vector"
+              d="M17 10.97C15.18 10.97 13.81 12.39 13.81 14.16C13.81 15.93 15.18 17.35 17 17.35C18.81 17.35 20.18 15.93 20.18 14.16C20.18 12.39 18.81 10.97 17 10.97ZM11.68 14.16C11.68 13.46 11.81 12.77 12.08 12.12C12.34 11.47 12.73 10.89 13.23 10.39C13.72 9.9 14.31 9.51 14.96 9.24C15.6 8.98 16.3 8.84 17 8.85C17.69 8.84 18.39 8.98 19.03 9.24C19.68 9.51 20.27 9.9 20.76 10.39C21.26 10.89 21.65 11.47 21.91 12.12C22.18 12.77 22.31 13.46 22.31 14.16C22.31 14.86 22.18 15.55 21.91 16.2C21.65 16.85 21.26 17.44 20.76 17.93C20.27 18.43 19.68 18.82 19.03 19.08C18.39 19.35 17.69 19.48 17 19.47C16.3 19.48 15.6 19.35 14.96 19.08C14.31 18.82 13.72 18.43 13.23 17.93C12.73 17.44 12.34 16.85 12.08 16.2C11.81 15.55 11.68 14.86 11.68 14.16ZM20.83 22.46C20.72 22.49 20.61 22.54 20.52 22.61C19.81 23.09 18.57 23.72 17 23.72C15.42 23.72 14.18 23.09 13.47 22.61C13.38 22.54 13.27 22.5 13.16 22.47C13.12 22.45 13.07 22.45 13.02 22.46C12.04 22.77 11.01 23.28 10.22 24.1C9.46 24.89 8.89 26.01 8.85 27.64C8.85 27.78 8.82 27.92 8.76 28.05C8.7 28.18 8.62 28.29 8.52 28.39C8.42 28.48 8.3 28.56 8.17 28.61C8.04 28.66 7.9 28.69 7.76 28.68C7.62 28.68 7.49 28.65 7.36 28.59C7.23 28.54 7.11 28.46 7.02 28.35C6.92 28.25 6.85 28.13 6.8 28C6.75 27.87 6.72 27.74 6.72 27.6C6.77 25.43 7.56 23.8 8.69 22.63C9.8 21.48 11.18 20.81 12.39 20.43C13.27 20.16 14.11 20.47 14.66 20.85C15.17 21.19 15.99 21.6 17 21.6C18 21.6 18.82 21.19 19.33 20.85C19.88 20.48 20.72 20.16 21.6 20.43C22.81 20.81 24.19 21.48 25.3 22.63C26.43 23.8 27.22 25.43 27.27 27.6C27.27 27.74 27.24 27.87 27.19 28C27.14 28.13 27.07 28.25 26.97 28.35C26.88 28.46 26.76 28.54 26.63 28.59C26.5 28.65 26.37 28.68 26.23 28.68C26.09 28.69 25.95 28.66 25.82 28.61C25.69 28.56 25.57 28.48 25.47 28.39C25.37 28.29 25.29 28.18 25.23 28.05C25.17 27.92 25.14 27.78 25.14 27.64C25.1 26.01 24.53 24.89 23.77 24.1C22.98 23.28 21.95 22.77 20.97 22.46C20.92 22.45 20.87 22.45 20.83 22.46Z"
+              fill="#FFFFFF"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+          </g>
+        </symbol>
+
+        <symbol id="checkmark" viewbox="0 0 20 20" fill="none">
+          <path
+            d="M16.6667 5L7.50004 14.1667L3.33337 10"
+            stroke="#44FF4A"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+
+        <symbol id="clock" viewbox="0 0 20 20" fill="none">
+          <path
+            d="M9.99996 18.3333C14.6023 18.3333 18.3333 14.6023 18.3333 9.99996C18.3333 5.39759 14.6023 1.66663 9.99996 1.66663C5.39759 1.66663 1.66663 5.39759 1.66663 9.99996C1.66663 14.6023 5.39759 18.3333 9.99996 18.3333Z"
+            stroke="#FFC343"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10 5V10L13.3333 11.6667"
+            stroke="#FFC343"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+
+        <symbol id="x-cross" viewbox="0 0 20 20" fill="none">
+          <path
+            d="M15 5L5 15"
+            stroke="#FF4548"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M5 5L15 15"
+            stroke="#FF4548"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+
+        <symbol id="t-cross" viewbox="0 0 20 20" fill="none">
+          <path
+            d="M4.16663 10H15.8333"
+            stroke="white"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10 4.16663V15.8333"
+            stroke="white"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+
+        <symbol id="man" viewbox="0 0 19 18" fill="none">
+          <path
+            d="M9.5 1.92868C7.8228 1.92868 6.5518 3.21437 6.5518 4.82148C6.5518 6.42858 7.8228 7.71427 9.5 7.71427C11.1772 7.71427 12.4482 6.42858 12.4482 4.82148C12.4482 3.21437 11.1772 1.92868 9.5 1.92868ZM4.58634 4.82148C4.5811 4.1869 4.70462 3.55765 4.9497 2.97038C5.19478 2.38311 5.55652 1.84956 6.01384 1.40083C6.47116 0.952107 7.01493 0.597166 7.61344 0.356691C8.21196 0.116217 8.85327 -0.00498172 9.5 0.000156809C10.1467 -0.00498172 10.788 0.116217 11.3866 0.356691C11.9851 0.597166 12.5288 0.952107 12.9862 1.40083C13.4435 1.84956 13.8052 2.38311 14.0503 2.97038C14.2954 3.55765 14.4189 4.1869 14.4137 4.82148C14.4189 5.45605 14.2954 6.08531 14.0503 6.67258C13.8052 7.25985 13.4435 7.79339 12.9862 8.24212C12.5288 8.69085 11.9851 9.04579 11.3866 9.28626C10.788 9.52674 10.1467 9.64794 9.5 9.6428C8.85327 9.64794 8.21196 9.52674 7.61344 9.28626C7.01493 9.04579 6.47116 8.69085 6.01384 8.24212C5.55652 7.79339 5.19478 7.25985 4.9497 6.67258C4.70462 6.08531 4.5811 5.45605 4.58634 4.82148ZM13.0444 12.3569C12.9432 12.384 12.8474 12.4279 12.7614 12.4867C12.1049 12.9213 10.961 13.4999 9.5 13.4999C8.039 13.4999 6.8951 12.9213 6.23864 12.4867C6.15247 12.4283 6.05674 12.3849 5.95561 12.3582C5.91186 12.3449 5.86532 12.3431 5.82065 12.353C4.91392 12.6307 3.96132 13.1 3.23672 13.8406C2.53177 14.5605 1.99979 15.5762 1.96572 17.0573C1.96279 17.184 1.93448 17.3088 1.88239 17.4247C1.8303 17.5406 1.75545 17.6453 1.66213 17.7328C1.56881 17.8203 1.45883 17.8889 1.33848 17.9347C1.21813 17.9805 1.08976 18.0026 0.960709 17.9998C0.831655 17.9969 0.704441 17.9691 0.58633 17.918C0.468219 17.8669 0.361524 17.7934 0.272337 17.7019C0.183151 17.6103 0.113219 17.5024 0.0665342 17.3843C0.0198498 17.2662 -0.0026728 17.1403 0.000252437 17.0136C0.0461133 15.0465 0.777266 13.568 1.81896 12.5047C2.84363 11.4595 4.12511 10.8513 5.23625 10.5119C6.05651 10.2612 6.82959 10.5505 7.33799 10.8886C7.8097 11.1998 8.56968 11.5713 9.5 11.5713C10.4303 11.5713 11.1903 11.1985 11.662 10.8886C12.1704 10.5518 12.9435 10.2612 13.7637 10.5119C14.8762 10.8513 16.1564 11.4595 17.181 12.5047C18.2227 13.5693 18.9539 15.0452 18.9997 17.0136C19.0027 17.1403 18.9802 17.2662 18.9335 17.3843C18.8868 17.5024 18.8168 17.6103 18.7277 17.7019C18.6385 17.7934 18.5318 17.8669 18.4137 17.918C18.2956 17.9691 18.1683 17.9969 18.0393 17.9998C17.9102 18.0026 17.7819 17.9805 17.6615 17.9347C17.5412 17.8889 17.4312 17.8203 17.3379 17.7328C17.2445 17.6453 17.1697 17.5406 17.1176 17.4247C17.0655 17.3088 17.0372 17.184 17.0343 17.0573C17.0002 15.5775 16.4682 14.5605 15.7633 13.8406C15.0387 13.1 14.0861 12.6307 13.1793 12.353C13.1348 12.3427 13.0883 12.344 13.0444 12.3569Z"
+            fill="white"
+          />
+        </symbol>
+      </svg>
+    </div>
+    <div id="root">
+      <!-- Фоновый компонент -->
+      <div class="background-block background-block--full-height">
+        <div class="background-block__sublayer">
+          <div
+            class="background-block__layer game-bg-shape game-bg-shape--top"
+          ></div>
+          <div
+            class="background-block__layer game-bg-shape game-bg-shape--bottom"
+          ></div>
+          <div class="background-block__blur">
+            <div
+              class="background-block__shading background-block__shading--game"
+            ></div>
+          </div>
+
+          <!-- <img
+            src="./assets/img/bg-image.png"
+            alt="Background Image"
+            class="background-block__image"
+          /> -->
+        </div>
+      </div>
+
+      <!-- Сетка страницы -->
+      <div class="grid-container">
+        <header class="grid-title">
+          <h1 class="title">Game</h1>
+        </header>
+        <div class="grid-tabs"></div>
+        <main class="grid-main">
+          <div class="cards-board">
+            <div class="cards-board__wrapper">
+              <article class="card card--red">
+                <img
+                  src="./assets/img/cards/card-01.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+              <article class="card card--blue">
+                <img
+                  src="./assets/img/cards/card-02.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+              <article class="card card--black">
+                <img
+                  src="./assets/img/cards/card-03.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+              <article class="card card--white">
+                <img
+                  src="./assets/img/cards/card-04.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+              <article class="card card--white">
+                <img
+                  src="./assets/img/cards/card-05.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+              <article class="card card--white">
+                <img
+                  src="./assets/img/cards/card-06.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+              <article class="card card--white">
+                <img
+                  src="./assets/img/cards/card-07.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+              <article class="card card--red">
+                <img
+                  src="./assets/img/cards/card-08.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+              <article class="card card--red">
+                <img
+                  src="./assets/img/cards/card-09.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+              <article class="card card--red">
+                <img
+                  src="./assets/img/cards/card-10.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+              <article class="card card--red">
+                <img
+                  src="./assets/img/cards/card-11.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+              <article class="card card--red">
+                <img
+                  src="./assets/img/cards/card-12.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+              <article class="card card--red">
+                <img
+                  src="./assets/img/cards/card-13.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+              <article class="card card--red">
+                <img
+                  src="./assets/img/cards/card-14.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+              <article class="card card--blue">
+                <img
+                  src="./assets/img/cards/card-15.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+              <article class="card card--blue">
+                <img
+                  src="./assets/img/cards/card-16.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+              <article class="card card--blue">
+                <img
+                  src="./assets/img/cards/card-17.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+              <article class="card card--blue">
+                <img
+                  src="./assets/img/cards/card-18.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+              <article class="card card--blue">
+                <img
+                  src="./assets/img/cards/card-19.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+              <article class="card card--blue">
+                <img
+                  src="./assets/img/cards/card-20.png"
+                  alt="card"
+                  class="card__image"
+                />
+              </article>
+            </div>
+          </div>
+        </main>
+        <div class="grid-btns"></div>
+        <div class="grid-scores">
+          <div class="scores">
+            <div class="scores__wrapper">
+              <div class="score score--red">
+                <span class="score__team-label">Red's</span> score:
+                <span class="score__value">0</span>
+              </div>
+              <div class="score score--blue">
+                <span class="score__team-label">Blue's</span> score:
+                <span class="score__value">12</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="grid-nav"></footer>
+      </div>
+
+      <!-- Модальное окно Голосование за Карту -->
+
+      <div class="vote-modal vote-modal--active">
+        <div class="vote-modal__overlay"></div>
+        <div class="vote-modal__container">
+          <div class="vote-modal__content">
+            <div class="vote-modal__counter">
+              <svg class="vote-modal__user-icon" width="19" height="18">
+                <use xlink:href="#man"></use>
+              </svg>
+              <span class="vote-modal__counter-value">0</span>
+              <span>/</span>
+              <span class="vote-modal__counter-total">10</span>
+            </div>
+            <button class="vote-modal__close-btn">
+              <svg width="20" height="20">
+                <use xlink:href="#x-cross"></use>
+              </svg>
+            </button>
+            <div class="vote-modal__card-view">
+              <img src="./assets/img/cards/card-01-full.png" alt="card" class="card__image" />
+            </div>
+            <button class="vote-modal__vote-btn">VOTE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>

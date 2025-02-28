@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Навигация по страницам</title>
+    <style>
+      :root {
+        --primary: #007bff;
+        --background: #f4f4f9;
+        --card-bg: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        background: var(--background);
+        line-height: 1.5;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      h2 {
+        color: #1a1a1a;
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+        text-align: center;
+      }
+
+      .card-list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .card {
+        background: var(--card-bg);
+        border-radius: 12px;
+        padding: 18px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+      }
+
+      .card:hover {
+        transform: translateY(-2px);
+      }
+
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+      }
+
+      .card-title {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        flex-grow: 1;
+      }
+
+      .status {
+        font-size: 0.9rem;
+        padding: 4px 10px;
+        border-radius: 20px;
+        margin-left: 12px;
+      }
+
+      .status:not([data-ready="100"]) {
+        background: #fce8e6;
+        color: #c5221f;
+      }
+
+      .status[data-ready="100"] {
+        background: #e6f4ea;
+        color: #137333;
+      }
+
+      .status[data-ready="90"] {
+        background: #f3f705;
+        color: rgb(23, 97, 8);
+      }
+
+      .description {
+        color: #5f6368;
+        font-size: 0.95rem;
+        line-height: 1.4;
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 12px;
+        }
+
+        .card {
+          padding: 16px;
+        }
+
+        .card-title {
+          font-size: 1rem;
+        }
+
+        .status {
+          font-size: 0.85rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Навигация по страницам</h2>
+
+      <div class="card-list">
+        <div class="card">
+          <div class="card-header">
+            <a href="home-rooms.html" class="card-title">home-rooms.html</a>
+            <div class="status" data-ready="100">✅ Готово</div>
+          </div>
+          <div class="description">Стартовая страница, вкладка "Комнаты"</div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a href="home-friends.html" class="card-title">home-friends.html</a>
+            <div class="status" data-ready="100">✅ Готово</div>
+          </div>
+          <div class="description">Стартовая страница, вкладка "Друзья"</div>
+        </div>
+
+        <!-- Повторяющиеся блоки для других страниц -->
+        <div class="card">
+          <div class="card-header">
+            <a href="room-now-playing-2x2.html" class="card-title"
+              >room-now-playing-2x2.html</a
+            >
+            <div class="status" data-ready="100">✅ Готово</div>
+          </div>
+          <div class="description">
+            Комната — ожидание игроков. Команды по 2 игрока
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a href="room-now-playing-3x3.html" class="card-title"
+              >room-now-playing-3x3.html</a
+            >
+            <div class="status" data-ready="100">✅ Готово</div>
+          </div>
+          <div class="description">
+            Комната — ожидание игроков. Команды по 3 игрока
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a href="room-now-playing-4x4.html" class="card-title"
+              >room-now-playing-4x4.html</a
+            >
+            <div class="status" data-ready="100">✅ Готово</div>
+          </div>
+          <div class="description">
+            Комната — ожидание игроков. Команды по 4 игрока
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a href="room-now-playing-4x4-empty.html" class="card-title"
+              >room-now-playing-4x4-empty.html</a
+            >
+            <div class="status" data-ready="100">✅ Готово</div>
+          </div>
+          <div class="description">
+            Комната — ожидание игроков. Команды по 4 игрока. Нехватка игроков
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a href="room-invited.html" class="card-title">room-invited.html</a>
+            <div class="status" data-ready="100">✅ Готово</div>
+          </div>
+          <div class="description">Комната — приглашенные игроки</div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a href="room-your-friends.html" class="card-title"
+              >room-your-friends.html</a
+            >
+            <div class="status" data-ready="100">✅ Готово</div>
+          </div>
+          <div class="description">Комната — список друзей</div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a href="room-modal.html" class="card-title">room-modal.html</a>
+            <div class="status" data-ready="100">✅ Готово</div>
+          </div>
+          <div class="description">Комната — модальное окно с чатом</div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a href="game.html" class="card-title">game.html</a>
+            <div class="status" data-ready="100">✅ Готово</div>
+          </div>
+          <div class="description">Игровой экран</div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <a href="game-card-modal.html" class="card-title"
+              >game-card-modal.html</a
+            >
+            <div class="status" data-ready="100">✅ Готово</div>
+          </div>
+          <div class="description">Голосование за карточку</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

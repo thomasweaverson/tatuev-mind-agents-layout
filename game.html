@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>MIND AGENTS</title>
+  </head>
+  <body>
+    <div class="visually-hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <defs>
+          <clipPath id="round-button"><path d="M0 0h80v85H0z" /></clipPath>
+        </defs>
+        <symbol
+          id="captain-indicator"
+          viewBox="0 0 19.0487 13.3658"
+          fill="none"
+        >
+          <path
+            d="M13.31 6.68L18.04 2.89L16.15 12.36L2.89 12.36L1 2.89L5.73 6.68L9.52 1L13.31 6.68Z"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="default-user-avatar" viewBox="0 0 34 34">
+          <path
+            id="Vector"
+            d="M1.77 17C1.77 8.58 8.58 1.77 17 1.77C25.41 1.77 32.22 8.58 32.22 17C32.22 25.41 25.41 32.22 17 32.22C8.58 32.22 1.77 25.41 1.77 17ZM17 3.89C13.52 3.89 10.19 5.27 7.73 7.73C5.27 10.19 3.89 13.52 3.89 17C3.89 20.47 5.27 23.8 7.73 26.26C10.19 28.72 13.52 30.1 17 30.1C20.47 30.1 23.8 28.72 26.26 26.26C28.72 23.8 30.1 20.47 30.1 17C30.1 13.52 28.72 10.19 26.26 7.73C23.8 5.27 20.47 3.89 17 3.89Z"
+            fill="#FFFFFF"
+            fill-opacity="1.000000"
+            fill-rule="nonzero"
+          />
+          <g opacity="0.500000">
+            <path
+              id="Vector"
+              d="M17 10.97C15.18 10.97 13.81 12.39 13.81 14.16C13.81 15.93 15.18 17.35 17 17.35C18.81 17.35 20.18 15.93 20.18 14.16C20.18 12.39 18.81 10.97 17 10.97ZM11.68 14.16C11.68 13.46 11.81 12.77 12.08 12.12C12.34 11.47 12.73 10.89 13.23 10.39C13.72 9.9 14.31 9.51 14.96 9.24C15.6 8.98 16.3 8.84 17 8.85C17.69 8.84 18.39 8.98 19.03 9.24C19.68 9.51 20.27 9.9 20.76 10.39C21.26 10.89 21.65 11.47 21.91 12.12C22.18 12.77 22.31 13.46 22.31 14.16C22.31 14.86 22.18 15.55 21.91 16.2C21.65 16.85 21.26 17.44 20.76 17.93C20.27 18.43 19.68 18.82 19.03 19.08C18.39 19.35 17.69 19.48 17 19.47C16.3 19.48 15.6 19.35 14.96 19.08C14.31 18.82 13.72 18.43 13.23 17.93C12.73 17.44 12.34 16.85 12.08 16.2C11.81 15.55 11.68 14.86 11.68 14.16ZM20.83 22.46C20.72 22.49 20.61 22.54 20.52 22.61C19.81 23.09 18.57 23.72 17 23.72C15.42 23.72 14.18 23.09 13.47 22.61C13.38 22.54 13.27 22.5 13.16 22.47C13.12 22.45 13.07 22.45 13.02 22.46C12.04 22.77 11.01 23.28 10.22 24.1C9.46 24.89 8.89 26.01 8.85 27.64C8.85 27.78 8.82 27.92 8.76 28.05C8.7 28.18 8.62 28.29 8.52 28.39C8.42 28.48 8.3 28.56 8.17 28.61C8.04 28.66 7.9 28.69 7.76 28.68C7.62 28.68 7.49 28.65 7.36 28.59C7.23 28.54 7.11 28.46 7.02 28.35C6.92 28.25 6.85 28.13 6.8 28C6.75 27.87 6.72 27.74 6.72 27.6C6.77 25.43 7.56 23.8 8.69 22.63C9.8 21.48 11.18 20.81 12.39 20.43C13.27 20.16 14.11 20.47 14.66 20.85C15.17 21.19 15.99 21.6 17 21.6C18 21.6 18.82 21.19 19.33 20.85C19.88 20.48 20.72 20.16 21.6 20.43C22.81 20.81 24.19 21.48 25.3 22.63C26.43 23.8 27.22 25.43 27.27 27.6C27.27 27.74 27.24 27.87 27.19 28C27.14 28.13 27.07 28.25 26.97 28.35C26.88 28.46 26.76 28.54 26.63 28.59C26.5 28.65 26.37 28.68 26.23 28.68C26.09 28.69 25.95 28.66 25.82 28.61C25.69 28.56 25.57 28.48 25.47 28.39C25.37 28.29 25.29 28.18 25.23 28.05C25.17 27.92 25.14 27.78 25.14 27.64C25.1 26.01 24.53 24.89 23.77 24.1C22.98 23.28 21.95 22.77 20.97 22.46C20.92 22.45 20.87 22.45 20.83 22.46Z"
+              fill="#FFFFFF"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+          </g>
+        </symbol>
+      </svg>
+    </div>
+    <div id="root">
+      <!-- Фоновый компонент -->
+      <div class="background-block background-block--full-height">
+        <div class="background-block__sublayer">
+          <div
+            class="background-block__layer game-bg-shape game-bg-shape--top"
+          ></div>
+          <div
+            class="background-block__layer game-bg-shape game-bg-shape--bottom"
+          ></div>
+          <div class="background-block__blur">
+            <div
+              class="background-block__shading background-block__shading--game"
+            ></div>
+          </div>
+
+          <!-- <img
+            src="./assets/img/bg-image.png"
+            alt="Background Image"
+            class="background-block__image"
+          /> -->
+        </div>
+      </div>
+
+      <!-- Сетка страницы -->
+      <div class="grid-container">
+        <header class="grid-title">
+          <h1 class="title">Game</h1>
+        </header>
+        <div class="grid-tabs"></div>
+        <main class="grid-main">
+          <div class="cards-board">
+            <div class="cards-board__wrapper">
+              <article class="card card--red">
+                <img src="./assets/img/cards/card-01.png" alt="card" class="card__image" />
+              </article>
+              <article class="card card--blue">
+                <img src="./assets/img/cards/card-02.png" alt="card" class="card__image" />
+              </article>
+              <article class="card card--black">
+                <img src="./assets/img/cards/card-03.png" alt="card" class="card__image" />
+              </article>
+              <article class="card card--white">
+                <img src="./assets/img/cards/card-04.png" alt="card" class="card__image" />
+              </article>
+              <article class="card card--white">
+                <img src="./assets/img/cards/card-05.png" alt="card" class="card__image" />
+              </article>
+              <article class="card card--white">
+                <img src="./assets/img/cards/card-06.png" alt="card" class="card__image" />
+              </article>
+              <article class="card card--white">
+                <img src="./assets/img/cards/card-07.png" alt="card" class="card__image" />
+              </article>
+              <article class="card card--red">
+                <img src="./assets/img/cards/card-08.png" alt="card" class="card__image" />
+              </article>
+              <article class="card card--red">
+                <img src="./assets/img/cards/card-09.png" alt="card" class="card__image" />
+              </article>
+              <article class="card card--red">
+                <img src="./assets/img/cards/card-10.png" alt="card" class="card__image" />
+              </article>
+              <article class="card card--red">
+                <img src="./assets/img/cards/card-11.png" alt="card" class="card__image" />
+              </article>
+              <article class="card card--red">
+                <img src="./assets/img/cards/card-12.png" alt="card" class="card__image" />
+              </article>
+              <article class="card card--red">
+                <img src="./assets/img/cards/card-13.png" alt="card" class="card__image" />
+              </article>
+              <article class="card card--red">
+                <img src="./assets/img/cards/card-14.png" alt="card" class="card__image" />
+              </article>
+              <article class="card card--blue">
+                <img src="./assets/img/cards/card-15.png" alt="card" class="card__image" />
+              </article>
+              <article class="card card--blue">
+                <img src="./assets/img/cards/card-16.png" alt="card" class="card__image" />
+              </article>
+              <article class="card card--blue">
+                <img src="./assets/img/cards/card-17.png" alt="card" class="card__image" />
+              </article>
+              <article class="card card--blue">
+                <img src="./assets/img/cards/card-18.png" alt="card" class="card__image" />
+              </article>
+              <article class="card card--blue">
+                <img src="./assets/img/cards/card-19.png" alt="card" class="card__image" />
+              </article>
+              <article class="card card--blue">
+                <img src="./assets/img/cards/card-20.png" alt="card" class="card__image" />
+              </article>
+            </div>
+          </div>
+        </main>
+        <div class="grid-btns"></div>
+        <div class="grid-scores">
+          <div class="scores">
+            <div class="scores__wrapper">
+              <div class="score score--red">
+                <span class="score__team-label">Red's</span> <span class="score__text">score:</span>
+                <span class="score__value">0</span>
+              </div>
+              <div class="score score--blue">
+                <span class="score__team-label">Blue's</span> <span class="score__text">score:</span>
+                <span class="score__value">12</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="grid-nav"></footer>
+      </div>
+
+      <div class="chat-modal chat-modal--game-screen">
+        <div class="chat-modal__overlay"></div>
+        <div class="chat-modal__wrapper">
+          <div class="chat-modal__drag-handle"></div>
+          <div class="chat-modal__scroll-wrapper">
+            <section class="chat">
+              <article class="chat__message">
+                <header class="chat__header">Player 1</header>
+                <p class="chat__text">
+                  Lacinia et. Urna pellentesque platea ut. Lorem ex. Malesuada
+                  imperdiet justo nec amet amet, luctus venenatis dolor dictum
+                  justo elit.
+                </p>
+              </article>
+
+              <article class="chat__message chat__message--server-message">
+                <header class="chat__header chat__header--server">
+                  SERVER
+                </header>
+                <p class="chat__text">
+                  Player 2 is <span class="chat--invited">invited</span> to the
+                  game
+                </p>
+              </article>
+
+              <article class="chat__message chat__message--server-message">
+                <header class="chat__header chat__header--server">
+                  SERVER
+                </header>
+                <p class="chat__text">
+                  Player 3 is <span class="chat--waiting">waiting</span> for the
+                  game
+                </p>
+              </article>
+
+              <article class="chat__message chat__message--server-message">
+                <header class="chat__header chat__header--server">
+                  SERVER
+                </header>
+                <p class="chat__text">
+                  Player 4 <span class="chat--declined">declined</span> the game
+                </p>
+              </article>
+
+              <article class="chat__message">
+                <header class="chat__header chat__header--you">
+                  YourNickName
+                </header>
+                <p class="chat__text">
+                  Lacinia et. Urna pellentesque platea ut. Lorem ex. Malesuada
+                  imperdiet justo nec amet amet, luctus venenatis dolor dictum
+                  justo elit.
+                </p>
+              </article>
+
+              <article class="chat__message">
+                <header class="chat__header">Player 99</header>
+                <p class="chat__text">
+                  Lacinia et. Urna pellentesque platea ut. Lorem ex. Malesuada
+                  imperdiet justo nec amet amet, luctus venenatis dolor dictum
+                  justo elit.
+                </p>
+              </article>
+
+              <article class="chat__message">
+                <header class="chat__header">Player 777</header>
+                <p class="chat__text">
+                  Lacinia et. Urna pellentesque platea ut. Lorem ex. Malesuada
+                  imperdiet justo nec amet amet, luctus venenatis dolor dictum
+                  justo elit.
+                </p>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
